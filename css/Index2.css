@@ -1,0 +1,124 @@
+body {
+    background-color: #000;
+    color: rgb(34, 207, 210);
+    /* text-align: center; */
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+:root {
+    --color-white: #a7e1e9;
+    --color-white2: rgb(255, 253, 253);
+    --color-yellow: #4321a9;
+    --color-black: #202020;
+    --color-glass: rgba(255, 255, 255, 0.05);
+    --color-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--color-white);
+  }
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    font-size: 13px;
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  
+  .heading h1 {
+    font-size: 5em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-glass);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--color-shadow);
+    padding: 8px 30px;
+    margin-top: 5px;
+    color: var(--color-white2);
+    display: inline-block;
+  }
+
+  .heading h2 {
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-glass);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--color-shadow);
+    padding: 8px 30px;
+    margin-top: 15px;
+    color: var(--color-white);
+    display: inline-block;
+  }
+  .heading h3 {
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-glass);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--color-shadow);
+    padding: 8px 30px;
+    margin-top: 5px;
+    color: var(--color-white);
+    display: inline-block;
+  }
+
+  .heading h4 {
+    font-size: 1.9em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--color-shadow);
+    padding: 8px 30px;
+    margin-top: 5px;
+    color: var(--color-white);
+    display: inline-block;
+  }
+
+  .typewriter h1 {
+    color: rgb(221, 232, 19);
+    font-size: 2.8em;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.25em solid rgb(250, 248, 245); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 10% auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 6.5s steps(30, end) infinite,
+      blink-caret .5s step-end infinite;
+  }
+
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  
